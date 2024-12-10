@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --color-black: #000000;
@@ -11,7 +12,7 @@
     --font-style-header: normal 600 80px/114% 'Montserrat', sans-serif;
     --font-style-header2: normal 600 48px/114% 'Montserrat', sans-serif; 
     --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
-    --font-style-body-text: normal 300 16px/120% 'Montserrat', sans-serif;
+    --font-style-body-text: normal 400 16px/120% 'Montserrat', sans-serif;
     
 }
 
@@ -42,8 +43,13 @@ body {
     margin: 0 auto;  
 }
 
-.textcontainer{
-    max-width: 1440px;
+.textcontainer {
+    max-width: 1600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 
@@ -122,6 +128,81 @@ button {
 }
 
 
+
+
+/* Cards*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Zajišťuje rovnoměrné rozložení obsahu s mezerami */
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 0;
+    gap: 205px; /* Mezery mezi horní a dolní částí karty */
+    padding: 14px 19px;
+    max-width: 304px; /* Maximální šířka karty */
+    min-width: 200px; /* Minimální šířka karty pro menší obrazovky */
+    height: auto; /* Výška se přizpůsobí obsahu */
+    border-radius: 12px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap; /* Karty se budou přesouvat na nový řádek při nedostatku místa */
+    gap: 20px; /* Mezery mezi kartami */
+    justify-content: center; /* Karty budou centrované */
+}
+
+.topcard {
+    display: flex;
+    width: 100%; /* Zajistí, že horní část karty využije celou šířku */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomcard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px 26px;
+}
+
+.difficulty {
+    width: 49px;
+    height: 49px;
+    padding: 14px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #FF5F00;
+}
+
+.cardname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.difficulty{
+    display: flex;
+    width: 49px;
+    height: 49px;
+    padding: 14px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24.5px;
+    border: 1px solid #FF5F00;
+}
 
 
 /* NAvbar */
@@ -269,6 +350,16 @@ footer {
         width: 100%;
     }
 
+
+    .textcontainer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+
+
+
 }
 
 
@@ -276,6 +367,22 @@ footer {
 /* Mobile */
 
 @media (max-width: 480px) {
+    
+    
+    :root {
+        --font-style-header: normal 600 40px/114% 'Montserrat', sans-serif;
+        --font-style-header2: normal 600 28px/114% 'Montserrat', sans-serif; 
+        --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
+        --font-style-body-text: normal 400 14px/120% 'Montserrat', sans-serif;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     nav {
         padding: 24px 16px;
     }
@@ -290,5 +397,13 @@ footer {
     footer {
         padding: 40px 20px;
     }
+
+    .textcontainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
 
 }
