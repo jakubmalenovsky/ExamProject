@@ -221,7 +221,7 @@ nav div {
     gap: 20px;
 }
 
-nav a {
+.logo{
     text-decoration: none;
     color: #FFF;
     font-family: Montserrat;
