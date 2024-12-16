@@ -11,7 +11,7 @@
 
     --font-style-header: normal 600 80px/114% 'Montserrat', sans-serif;
     --font-style-header2: normal 600 48px/114% 'Montserrat', sans-serif; 
-    --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
+    --font-style-header3: normal 600 32px/114% 'Montserrat', sans-serif; 
     --font-style-body-text: normal 400 16px/120% 'Montserrat', sans-serif;
     
 }
@@ -62,7 +62,7 @@ h1 { font: var(--font-style-header); color: var(--color-white); }
 
 h2 { font: var(--font-style-header2); color: var(--color-white); }
 
-h3 { font: var(--font-style-header3); color: var(--color-white);}
+h3 { font: var(--font-style-header3); color: var(--color-black);}
 
 p { font: var(--font-style-body-text); color: var(--color-white);}
 
@@ -98,16 +98,30 @@ button {
     gap: 14px;
     border-radius: 20px;
     border: 1px solid #FF5F00;
-}
-
-.button1 p {
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
 }
+
+.button2 {
+    display: flex;
+    padding: 14px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 20px;
+    border: 1px solid #FF5F00;
+    color: var(--color-black);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
 
 
 .footer-button {
@@ -322,10 +336,21 @@ footer {
 
 
 @media (max-width: 768px) {
+    
+    :root {
+        --font-style-header: normal 600 60px/114% 'Montserrat', sans-serif;
+        --font-style-header2: normal 600 36px/114% 'Montserrat', sans-serif; 
+        --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
+        --font-style-body-text: normal 400 15px/120% 'Montserrat', sans-serif;
+    }
+    
+    
+    
+    
     nav {
         padding: 32px 40px;
     }
-    nav p {
+    .logo {
         font-size: 28px;
     }
     #language {
@@ -386,7 +411,7 @@ footer {
     nav {
         padding: 24px 16px;
     }
-    nav p {
+    .logo {
         font-size: 24px;
     }
     #language {

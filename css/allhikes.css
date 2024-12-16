@@ -1,14 +1,5 @@
 @import url(../css/general.css);
 
-.button1 p {
-    color: var(--color-black);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 125% */
-}
-
 
 .text-with-button {
     display: flex;
