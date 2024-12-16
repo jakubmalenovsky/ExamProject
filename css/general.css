@@ -149,7 +149,11 @@ button {
     line-height: 20px; /* 125% */
 }
 
-
+.backbutton{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 
 /* Cards*/
@@ -160,18 +164,16 @@ button {
     justify-content: space-between; /* Zajišťuje rovnoměrné rozložení obsahu s mezerami */
     align-items: flex-start;
     flex-grow: 1;
-    flex-shrink: 0;
     gap: 205px; /* Mezery mezi horní a dolní částí karty */
-    padding: 14px 19px;
-    max-width: 304px; /* Maximální šířka karty */
-    min-width: 200px; /* Minimální šířka karty pro menší obrazovky */
+    padding: 14px 19px;/* Maximální šířka karty */
     height: auto; /* Výška se přizpůsobí obsahu */
     border-radius: 12px;
+    flex-basis: calc(25% - 20px); /* Dynamická šířka karet s mezerami */
+
 }
 
 .cardcontainer {
-    display: flex;
-    flex-wrap: wrap; /* Karty se budou přesouvat na nový řádek při nedostatku místa */
+    display: flex; /* Karty se budou přesouvat na nový řádek při nedostatku místa */
     gap: 20px; /* Mezery mezi kartami */
     justify-content: center; /* Karty budou centrované */
 }
@@ -199,13 +201,44 @@ button {
     align-items: center;
     border-radius: 50%;
     border: 1px solid #FF5F00;
+
 }
+.difficulty p {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 200% */
+
+}
+
+
 
 .cardname {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
+    gap: 4px;
+}
+
+.start {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 181.818% */
+}
+.end{
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 83.333% */
 }
 
 .card img {
@@ -396,8 +429,23 @@ footer {
 
 
 
+    .cardcontainer {
+        display: grid; /* Přepínáme na grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Dvě karty v jednom řádku */
+        gap: 20px; /* Zachovává mezery mezi kartami */
+        justify-content: center; /* Centrované rozložení gridu */
+    }
+
+    .card {
+        flex-grow: 1; /* Zajišťuje, že karty nebudou růst mimo jejich obsah */
+        min-width: 240px;
+    }
+
 
 }
+
+
+    
 
 
 
