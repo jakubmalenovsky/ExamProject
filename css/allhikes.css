@@ -1,6 +1,7 @@
 @import url(../css/general.css);
 
 
+
 #herotips{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(../resources/images/tips.jpg) lightgray 50% / cover no-repeat;}
 
@@ -31,6 +32,38 @@
 }
 
 
+
+#id1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/javornik.jpg) lightgray 50% / cover no-repeat;
+}
+#id2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/radhost.jpg) lightgray 50% / cover no-repeat;
+}
+
+#id3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/velkalhota.jpg) lightgray 50% / cover no-repeat;
+}
+#id4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/solan.jpg) lightgray 50% / cover no-repeat;
+}
+#id5 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/zasova.jpg) lightgray 50% / cover no-repeat;
+}
+#id6 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/bila.jpg) lightgray 50% / cover no-repeat;
+}
+#id7 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/zubri.jpg) lightgray 50% / cover no-repeat;
+}
+#id8 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/zasova.jpg) lightgray 50% / cover no-repeat;
+}
+
+.card-container{
+   padding-top: 48px;
+}
+
+
 .text-with-button {
     display: flex;
     flex-direction: column;
@@ -43,6 +76,9 @@
     color: var(--color-black);
     text-align: center;
 }
+
+
+
 
 
 
