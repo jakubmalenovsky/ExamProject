@@ -170,6 +170,14 @@ button {
     display: flex;
     align-items: center;
     gap: 12px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+
 }
 
 

@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javorník</title>
     <link rel="stylesheet" href="../css/hike.css">
-
 </head>
 <body>
+    <!-- Hero Section with Navigation -->
     <section class="herohike" id="javornikhero">
         <nav>
             <a href="../index.html" class="logo">visitroznov</a>
             <div>
-                <a href="../pages/likedhikes.html"><img src="../resources/favorite.svg" alt="Favorite icon"></a>
+                <a href="../pages/404.html"><img src="../resources/favorite.svg" alt="Favorite icon"></a>
                 <img src="../resources/sunny.svg" alt="Weather icon">
                 <p id="language">EN</p>
             </div>
         </nav>
 
-
+        <!-- Text and Buttons Container -->
         <div class="textcontainer">
             <div class="buttoncontainer">
                 <a href="javascript:history.back()" class="backbutton"><img src="../resources/arrow_back.svg" alt="Arrow">Go back</a>
@@ -28,8 +28,8 @@
                 <div>
                     <p>Rožnov p.R.</p>
                     <h1>Javorník</h1>
-
                 </div>
+                <!-- Information Cards -->
                 <div class="infosmall">
                     <div class="infocard">
                         <img src="../resources/speed.svg" alt="Difficulty">
@@ -37,7 +37,6 @@
                             <p>Difficulty</p>
                             <p class="infocard-bold">Hard</p>
                         </div>
-                        
                     </div>
                     <div class="infocard">
                         <img src="../resources/conversion_path.svg" alt="Distance">
@@ -45,7 +44,6 @@
                             <p>Distance</p>
                             <p class="infocard-bold">22km</p>
                         </div>
-                        
                     </div>
                     <div class="infocard">
                         <img src="../resources/aod_watch.svg" alt="Duration">
@@ -53,7 +51,6 @@
                             <p>Time</p>
                             <p class="infocard-bold">7:15h</p>
                         </div>
-                        
                     </div>
                     <a href="https://en.mapy.cz/turisticka?planovani-trasy&rc=9p36txUTrafiZxUia7kGIjphcJTxUTra&rs=pubt&rs=base&rs=base&rs=pubt&ri=15210596&ri=1990526&ri=1897930&ri=15210596&mrp=%7B%22c%22%3A132%7D&rt=%7B%22t%22%3A132%2C%22twp%22%3A%229p36txUTraj7zxUn6zc2jxU14k3Fpgn03pGePnhB.dmE5nNfG1%22%7D&rt=&xc=%5B%5D&x=18.1517145&y=49.5171085&z=15" class="infocard">
                         <img src="../resources/mapy-cz.svg" alt="Mapy.cz">
@@ -61,20 +58,13 @@
                             <p>Mapy.cz</p>
                             <p class="infocard-bold">Link</p>
                         </div>
-                        
                     </a>
-                    
-
-
                 </div>
-
             </div>
         </div>    
     </section>
 
-    <iframe style="border:none" src="https://en.frame.mapy.cz/s/pedanasuja" width="700" height="466" frameborder="0"></iframe>
-
-
+    <!-- Description Section -->
     <section id="description">
         <div class="fixmain">
             <div class="hikedescription">
@@ -83,13 +73,14 @@
                 levels, the trail features gentle ascents and rest spots, making it ideal for
                 families and casual hikers seeking a relaxing outdoor experience.</p>
             </div>
-    </div>
-
-
-    
+        </div>
     </section>
 
+    <!-- What to See Section -->
     <section id="whattosee">
+        <div class="fixmain">
+            <h3>What to see</h3>
+        </div>
         <div class="scroll-container" id="scrollContainer">
             <button class="scroll-arrow left" id="leftArrow" onclick="moveLeft()">&#8592;</button>
             <div class="image-item">
@@ -113,15 +104,25 @@
     </section>
 
     <main>
+    <!-- Map Section -->
     <section id="map">
             <div class="mapcontainer">
-                <img src="../resources/images/javornik/javornikmap.jpg" alt="Map">
+                <iframe class="map" style="border:none" src="https://en.frame.mapy.cz/s/pedanasuja" frameborder="0"></iframe>
             </div>
-
+            <div class="mapdescription">
+                <img src="../resources/path.svg" alt="path">
+                <div class="mapdescriptiontext">
+                    <p>Rožnov pod Radhoštěm</p>
+                    <p>Pramen Jičínky</p>
+                    <p>Javorník</p>
+                    <p>Kaamenárka</p>
+                    <p>Rožnov pod Radhoštěm</p>
+                </div>
+            </div>    
     </section>
 
+    <!-- Information Boxes -->
     <section class="infobox" id="infobox">
-
         <div class="otherinfo">
             <h3>Restaurants</h3>
             <p>on the way you can find 2 restaurants.. One in Dolní Paseky called. and then the second on the top of the Javorník mountain.</p>
@@ -135,83 +136,54 @@
             <p>In winter you should bring with you a really warm clothes and even maybe a crampons. Weather in winter can be extreme. Check forecast first.</p>
         </div>
     </section>    
-
-
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <div id="footer-main">
-            <!-- Section 1: Hike and Explore -->
-            <div class="footer-hike-container">
-                <div id="footerhikeandexplore" class="footer-hike-and-explore">
-                    <h2>Hike and explore!</h2>
-                    <p>Do you have a hidden trip to share?</p>
-                </div>
-                <button id="emailButton" class="footer-button">Write us!</button>
+<!-- Footer Section -->
+<footer>
+    <div id="footer-main">
+        <!-- Hike and Explore -->
+        <div class="footer-hike-container">
+            <div id="footerhikeandexplore" class="footer-hike-and-explore">
+                <h2>Hike and explore!</h2>
+                <p>Do you have a hidden trip to share?</p>
             </div>
-
-            <hr>
-    
-            <!-- Section 2: Footer Details -->
-            <div class="footer-details-container">
-                    <div class="footer-detail">
-                        <h3 class="footerdescription">Contact</h3>
-                        <p>support@hiddenroznov.cz<br>
-                           +420 789 456 012
-                        </p>
-                    </div>
-                    <div class="footer-detail">
-                        <h3 class="footerdescription">Credits</h3>
-                        <p>Čeněk Pavlica - Photography<br>
-                           Jakub Malenovský - Photography
-                        </p>
-                    </div>
-                    <div class="footer-detail">
-                        <h3 class="footerdescription">Useful links</h3>
-                        <p>Safety tips for hikers<br>
-                           Local conservation efforts<br>
-                           Weather updates or trail conditions
-                        </p>
-                    </div>
-                    <div class="footer-detail">
-                        <h3 class="footerdescription">Legal and Policies</h3>
-                        <p>Privacy Policy<br>
-                           Cookie Policy
-                        </p>
-                    </div>
-                
-            </div>
+            <button id="emailButton" class="footer-button">Write us!</button>
         </div>
-        <p class="footer-copyright">©2024 DesignedbyJakub, all rights reserved</p>
-    </footer>
 
+        <hr>
 
+        <!-- Footer Details -->
+        <div class="footer-details-container">
+                <div class="footer-detail">
+                    <h3 class="footerdescription">Contact</h3>
+                    <p>support@hiddenroznov.cz<br>
+                       +420 789 456 012
+                    </p>
+                </div>
+                <div class="footer-detail">
+                    <h3 class="footerdescription">Credits</h3>
+                    <p>Čeněk Pavlica - Photography<br>
+                       Jakub Malenovský - Photography
+                    </p>
+                </div>
+                <div class="footer-detail">
+                    <h3 class="footerdescription">Useful links</h3>
+                    <p>Safety tips for hikers<br>
+                       Local conservation efforts<br>
+                       Weather updates or trail conditions
+                    </p>
+                </div>
+                <div class="footer-detail">
+                    <h3 class="footerdescription">Legal and Policies</h3>
+                    <p>Privacy Policy<br>
+                       Cookie Policy
+                    </p>
+                </div>
+        </div>
+    </div>
+    <p class="footer-copyright">©2024 DesignedbyJakub, all rights reserved</p>
+</footer>
 
-    <script src="../js/hike.js"></script>    
+<script src="../js/hike.js"></script>    
 </body>
 </html>
