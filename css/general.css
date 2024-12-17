@@ -114,6 +114,11 @@ button {
     line-height: 20px;
 }
 
+.button1:hover {
+    background-color: #FF5F00;
+    color: #FFF;
+}
+
 .button2 {
     display: flex;
     padding: 14px 35px;
@@ -128,6 +133,11 @@ button {
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+}
+
+.button2:hover {
+    background-color: #FF5F00;
+    color: #FFF;
 }
 
 
@@ -149,11 +159,23 @@ button {
     line-height: 20px; /* 125% */
 }
 
+.footer-button:hover {
+    background-color: #FFF;
+    color: #000000;
+}
+
 .backbutton{
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
+
+
+
+
+
+
 
 
 /* Cards*/
@@ -410,7 +432,7 @@ footer {
     :root {
         --font-style-header: normal 600 60px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 36px/114% 'Montserrat', sans-serif; 
-        --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
+        --font-style-header3: normal 600 24px/114% 'Montserrat', sans-serif; 
         --font-style-body-text: normal 400 15px/120% 'Montserrat', sans-serif;
     }
     
@@ -486,7 +508,7 @@ footer {
     :root {
         --font-style-header: normal 600 40px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 28px/114% 'Montserrat', sans-serif; 
-        --font-style-header3: normal normal 20px/1.4 'Montserrat', sans-serif; 
+        --font-style-header3: normal 600 20px/114% 'Montserrat', sans-serif; 
         --font-style-body-text: normal 400 14px/120% 'Montserrat', sans-serif;
         
     }

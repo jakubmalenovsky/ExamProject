@@ -56,6 +56,7 @@ main p {
     align-items: center;
     gap: 20px;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 
 
@@ -71,7 +72,7 @@ main p {
 
 
 
-
+/* hike section */
 
 
 
@@ -83,23 +84,80 @@ main p {
 }
 
 
+/* map section */
 
 
+.mapcontainer{
+    display: flex;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
 
+/* infobox section */
 
 
 
 .infobox{
     display: flex;
     align-items: flex-start;
-    gap: 80px;
+    gap: 50px;
+    padding-bottom: 80px;
 }
 
 .otherinfo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 12px;
     flex-shrink: 0;
     flex: 1 0 0;
+}
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .infocard-bold {
+        font-size: 24px;
+    }
+
+    .infocard{
+        gap: 16px;
+    }
+    
+    .infobox{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .otherinfo
+    {
+        gap: 8px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .infocard-bold {
+        font-size: 18px;
+    }
+
+    .infocard{
+        gap: 12px;
+    }
+    
+    .otherinfo
+    {
+        gap: 4px;
+    }
+
 }
