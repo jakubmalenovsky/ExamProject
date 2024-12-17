@@ -1,5 +1,10 @@
 @import url(../css/general.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Hero section*/
 #hero{
     background: linear-gradient(180deg, rgba(17, 15, 16, 0.20) 4.69%, rgba(17, 15, 16, 0.72) 60.45%, #110F10 100%), url(../resources/images/IMG_9769.jpg) lightgray 50% / cover no-repeat;

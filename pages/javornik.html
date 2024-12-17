@@ -55,6 +55,14 @@
                         </div>
                         
                     </div>
+                    <a href="https://en.mapy.cz/turisticka?planovani-trasy&rc=9p36txUTrafiZxUia7kGIjphcJTxUTra&rs=pubt&rs=base&rs=base&rs=pubt&ri=15210596&ri=1990526&ri=1897930&ri=15210596&mrp=%7B%22c%22%3A132%7D&rt=%7B%22t%22%3A132%2C%22twp%22%3A%229p36txUTraj7zxUn6zc2jxU14k3Fpgn03pGePnhB.dmE5nNfG1%22%7D&rt=&xc=%5B%5D&x=18.1517145&y=49.5171085&z=15" class="infocard">
+                        <img src="../resources/mapy-cz.svg" alt="Mapy.cz">
+                        <div class="infotext">
+                            <p>Mapy.cz</p>
+                            <p class="infocard-bold">Link</p>
+                        </div>
+                        
+                    </a>
                     
 
 
@@ -64,32 +72,47 @@
         </div>    
     </section>
 
+    <iframe style="border:none" src="https://en.frame.mapy.cz/s/pedanasuja" width="700" height="466" frameborder="0"></iframe>
 
-<main>
 
     <section id="description">
-        <div class="hikedescription">
-            <p>This scenic route connects Rožnov pod Radhoštěm to Horečky, offering
+        <div class="fixmain">
+            <div class="hikedescription">
+                <p>This scenic route connects Rožnov pod Radhoštěm to Horečky, offering
                 breathtaking views, lush forests, and serene landscapes. Suitable for all skill
                 levels, the trail features gentle ascents and rest spots, making it ideal for
                 families and casual hikers seeking a relaxing outdoor experience.</p>
-        </div>
+            </div>
+    </div>
+
 
     
     </section>
 
     <section id="whattosee">
-        <div class="whattosee">
-            <h3>What to see</h3>
-                <div class="gallerycontainer">
-                    <img src="../resources/javornik1.jpg" alt="Javorník">
-                    <img src="../resources/javornik2.jpg" alt="Javorník">
-                    <img src="../resources/javornik3.jpg" alt="Javorník">
-                </div>
-        </div>        
-
+        <div class="scroll-container" id="scrollContainer">
+            <button class="scroll-arrow left" id="leftArrow" onclick="moveLeft()">&#8592;</button>
+            <div class="image-item">
+                <img src="../resources/images/javornik/javorniksun.jpg" alt="Cinque Terre">
+                <p class="image-caption">From Rožnov</p>
+            </div>
+            <div class="image-item">
+                <img src="../resources/images/javornik/javorniksun2.jpg" alt="Forest">
+                <p class="image-caption">Pramen Jičínky</p>
+            </div>
+            <div class="image-item">
+                <img src="../resources/images/javornik/javorniksun.jpg" alt="Northern Lights">
+                <p class="image-caption">Javorník viewpoint</p>
+            </div>
+            <div class="image-item">
+                <img src="../resources/images/javornik/javorniksun.jpg" alt="Mountains">
+                <p class="image-caption">Javorník viewpoint</p>
+            </div>
+            <button class="scroll-arrow right" id="rightArrow" onclick="moveRight()">&#8594;</button>
+        </div>       
     </section>
 
+    <main>
     <section id="map">
             <div class="mapcontainer">
                 <img src="../resources/images/javornik/javornikmap.jpg" alt="Map">
@@ -187,5 +210,8 @@
         <p class="footer-copyright">©2024 DesignedbyJakub, all rights reserved</p>
     </footer>
 
+
+
+    <script src="../js/hike.js"></script>    
 </body>
 </html>

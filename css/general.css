@@ -41,6 +41,8 @@ body {
     height: 100%;
     background-color: var(--color-grey);
     margin: 0 auto;  
+    
+    
 }
 main {
     max-width: 1600px;
