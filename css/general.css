@@ -11,7 +11,7 @@
     --font-style-header: normal 600 80px/114% 'Montserrat', sans-serif;
     --font-style-header2: normal 600 48px/114% 'Montserrat', sans-serif; 
     --font-style-header3: normal 600 32px/114% 'Montserrat', sans-serif; 
-    --font-style-body-text: normal 400 16px/130% 'Montserrat', sans-serif;
+    --font-style-body-text: normal 400 16px/160% 'Montserrat', sans-serif;
 }
 
 /* Layout */
@@ -376,7 +376,7 @@ footer {
         --font-style-header: normal 600 60px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 36px/114% 'Montserrat', sans-serif; 
         --font-style-header3: normal 600 24px/114% 'Montserrat', sans-serif; 
-        --font-style-body-text: normal 400 15px/120% 'Montserrat', sans-serif;
+        --font-style-body-text: normal 400 15px/160% 'Montserrat', sans-serif;
     }
     
     nav {
@@ -433,7 +433,7 @@ footer {
         --font-style-header: normal 600 40px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 28px/114% 'Montserrat', sans-serif; 
         --font-style-header3: normal 600 20px/114% 'Montserrat', sans-serif; 
-        --font-style-body-text: normal 400 14px/120% 'Montserrat', sans-serif;
+        --font-style-body-text: normal 400 14px/160% 'Montserrat', sans-serif;
     }
     
     nav {
