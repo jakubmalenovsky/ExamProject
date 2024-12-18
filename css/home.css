@@ -47,15 +47,6 @@ html {
     align-self: stretch;
 }
 
-.card-container{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
-    align-self: stretch;
-    gap: 41px 20px;
-    flex-wrap: wrap;
-}
 
 
 

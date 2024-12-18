@@ -210,16 +210,6 @@ button {
     z-index: 10;
 }
 
-.difficulty {
-    width: 49px;
-    height: 49px;
-    padding: 14px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid #FF5F00;
-}
 
 .difficulty p {
     color: #FFF;
