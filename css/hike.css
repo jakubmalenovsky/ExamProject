@@ -95,6 +95,18 @@ main p {
 }
 
 /* carousel section */
+.whattoseeheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whattoseeheaderbuttons{
+    display: flex;
+    align-items: center;    
+    gap: 11px;
+}
+
 .scroll-container {
     position: relative;
     overflow-x: auto;
@@ -129,20 +141,16 @@ main p {
 }
 
 .scroll-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
+    
+
+    padding: 12px;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
-.scroll-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+
 
 .scroll-arrow.left {
     left: 20px;

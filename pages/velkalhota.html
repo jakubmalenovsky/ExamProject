@@ -81,10 +81,16 @@
     <!-- What to See Section -->
     <section id="whattosee">
         <div class="fixmain">
-            <h3>What to see</h3>
+            <div class="whattoseeheader">
+                <h3>What to see</h3>
+                <div class="whattoseeheaderbuttons">
+                    <button class="scroll-arrow left" id="leftArrow" onclick="moveLeft()"><img src="../resources/arrow_back_ios.svg"></button>
+                    <button class="scroll-arrow right" id="rightArrow" onclick="moveRight()"><img src="../resources/arrow_forward_ios.svg"></button>
+                </div>
+            </div>    
         </div>
         <div class="scroll-container" id="scrollContainer">
-            <button class="scroll-arrow left" id="leftArrow" onclick="moveLeft()">&#8592;</button>
+            
             <div class="image-item">
                 <img src="../resources/images/velkalhota/lhota1.jpg" alt="Way to lhota">
                 <p class="image-caption">Way to Lhota</p>
@@ -105,7 +111,7 @@
                 <img src="../resources/images/velkalhota/lhota2.jpg" alt="Lhota tree">
                 <p class="image-caption">Big tree near Lhota</p>
             </div>
-            <button class="scroll-arrow right" id="rightArrow" onclick="moveRight()">&#8594;</button>
+            
         </div>       
     </section>
 
@@ -113,7 +119,7 @@
     <!-- Map Section -->
     <section id="map">
             <div class="mapcontainer">
-                <iframe class="map" style="border:none" src="https://en.frame.mapy.cz/s/dubuvozeko" frameborder="0"></iframe>
+                <iframe class="map" style="border:none" src="https://en.frame.mapy.cz/s/dubuvozeko" ></iframe>
             </div>
             <div class="mapdescription">
                 <img src="../resources/path.svg" alt="path">

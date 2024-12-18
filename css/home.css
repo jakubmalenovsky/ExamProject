@@ -147,7 +147,6 @@ html {
     width: 100%;
     height: 845px; /* Nastavení pevné výšky obrázku */
     object-fit: cover; /* Udržuje správné ořezání obrázku, aby vyplnil prostor */
-    max-width: auto; /* Maximální šířka obrázku */
     border-radius: 12px;
 }
 
