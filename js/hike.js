@@ -2,14 +2,14 @@ const scrollContainer = document.getElementById('scrollContainer');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 
-// Posouvání myší
+// Scrolling with mouse
 scrollContainer.addEventListener('wheel', (event) => {
   event.preventDefault();
   scrollContainer.scrollLeft += event.deltaY;
   updateArrows();
 });
 
-// Funkce pro posouvání vlevo
+// Function to scroll left
 function moveLeft() {
   scrollContainer.scrollBy({
     left: -300,
@@ -18,7 +18,7 @@ function moveLeft() {
   setTimeout(updateArrows, 300);
 }
 
-// Funkce pro posouvání vpravo
+// Function to scroll right
 function moveRight() {
   scrollContainer.scrollBy({
     left: 300,
@@ -27,7 +27,7 @@ function moveRight() {
   setTimeout(updateArrows, 300);
 }
 
-// Aktualizace šipek pro viditelnost
+// Update arrows visibility
 function updateArrows() {
   const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
@@ -44,5 +44,5 @@ function updateArrows() {
   }
 }
 
-// Inicializace šipek při načtení stránky
+// Initialize arrows on page load
 updateArrows();
