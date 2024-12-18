@@ -1,27 +1,24 @@
 @import url(../css/general.css);
 
+/* Hero section background */
+#herotips {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(../resources/images/tips.jpg) lightgray 50% / cover no-repeat;
+}
 
-
-#herotips{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(../resources/images/tips.jpg) lightgray 50% / cover no-repeat;}
-
-
-
-
-
-.texthero{
+/* Hero text styling */
+.texthero {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
-}    
+}
 
-.texthero p{
+.texthero p {
     max-width: 700px;
 }
 
-
+/* Text container styling */
 .textcontainer {
     display: flex;
     flex-direction: column;
@@ -31,15 +28,13 @@
     padding-bottom: 30vh;
 }
 
-
-
+/* Background images for different sections */
 #id1 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/javornik.jpg) lightgray 50% / cover no-repeat;
 }
 #id2 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/radhost.jpg) lightgray 50% / cover no-repeat;
 }
-
 #id3 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/velkalhota.jpg) lightgray 50% / cover no-repeat;
 }
@@ -59,11 +54,12 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../resources/images/zasova.jpg) lightgray 50% / cover no-repeat;
 }
 
-.card-container{
-   padding-top: 48px;
+/* Card container padding */
+.card-container {
+    padding-top: 48px;
 }
 
-
+/* Text with button styling */
 .text-with-button {
     display: flex;
     flex-direction: column;
@@ -76,11 +72,3 @@
     color: var(--color-black);
     text-align: center;
 }
-
-
-
-
-
-
-
-

@@ -1,9 +1,6 @@
 @import url(../css/general.css);
 
-
-
 /* Navbar color change */
-
 .logo{
     color: var(--color-black);
 }
@@ -12,10 +9,7 @@
     color: var(--color-black);
 }
 
-
-
-
-
+/* Text styling */
 .text-with-text{
     display: flex;
     flex-direction: column;
@@ -37,6 +31,7 @@
     color: var(--color-black);
 }
 
+/* Container styling */
 .fourcontainer{
     display: flex;
     padding: 30px 0px 96px 0px;
@@ -45,20 +40,17 @@
     align-items: center;
     gap: 62px;
     flex-shrink: 0;
-
 }
 
-
+/* Responsive design */
 @media (max-width: 768px) {
     .text-with-text p {
         font-size: 220px;
     }
 }
 
-
 @media (max-width: 480px) {
     .text-with-text p {
         font-size: 144px;
     }
 }
-

@@ -5,7 +5,6 @@ main p {
 }
 
 /* hero section */
-
 #javornikhero{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(../resources/images/javornik.jpg) lightgray 50% / cover no-repeat;
 }
@@ -18,6 +17,7 @@ main p {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url(../resources/images/velkalhota.jpg) lightgray 50% / cover no-repeat;
 }
 
+/* infocard section */
 .infocard{
     display: flex;
     padding: 12px 28px;
@@ -33,7 +33,6 @@ main p {
     align-items: flex-start;
     gap: 4px;
 }
-
 
 .text-info {
     display: flex;
@@ -66,7 +65,6 @@ main p {
     flex-wrap: wrap;
 }
 
-
 .infocard-bold{
     color: #FF5F00;
     font-family: Montserrat;
@@ -76,12 +74,7 @@ main p {
     line-height: normal;
 }
 
-
-
-
 /* hike section */
-
-
 .fixmain{
     max-width: 1600px;
     padding-left: 80px;
@@ -89,31 +82,25 @@ main p {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    
 }
 
 .hikedescription{
     padding-top: 68px;
     padding-bottom: 68px;
     max-width: 769px;
-
 }
 
 .hikedescription p{
     color: var(--color-black);
 }
 
-
 /* carousel section */
-
-  
 .scroll-container {
     position: relative;
     overflow-x: auto;
     white-space: nowrap;
-    margin: 0; /* odstraníme margin z main */
-    width: 100vw; 
-    
+    margin: 0;
+    width: 100vw;
     max-width: 1600px;
     padding-top: 12px;
     padding-left: 70px;
@@ -129,7 +116,6 @@ main p {
     margin: 0 10px;
 }
 
-
 .image-item img {
     width: 333px;
     height: 290px;
@@ -137,13 +123,10 @@ main p {
     object-fit: cover;
 }
 
-
 .image-caption {
     padding-top: 8px;
     color: var(--color-black);
 }
-
-
 
 .scroll-arrow {
     position: absolute;
@@ -157,32 +140,21 @@ main p {
     border-radius: 3px;
 }
 
-/* Při najetí na šipky změní barvu */
 .scroll-arrow:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Levá šipka bude na levé straně */
 .scroll-arrow.left {
-    left: 20px; /* Posuneme šipku na levý okraj */
-    visibility: hidden; /* Zůstává skrytá, pokud se nedá posouvat vlevo */
+    left: 20px;
+    visibility: hidden;
 }
 
-/* Pravá šipka bude na pravé straně */
 .scroll-arrow.right {
-    right: 20px; /* Posuneme šipku na pravý okraj */
-    visibility: hidden; /* Zůstává skrytá, pokud se nedá posouvat vpravo */
+    right: 20px;
+    visibility: hidden;
 }
-
-
-
-
-
-
 
 /* map section */
-
-
 .mapcontainer{
     display: flex;
     gap: 50px;
@@ -195,8 +167,6 @@ main p {
     border-radius: 12px;
 }
 
-
-
 #map{
     display: inline-flex;
     align-items: flex-start;
@@ -205,12 +175,10 @@ main p {
     padding-bottom: 68px;
 }
 
-
-
 .mapdescription{
     display: inline-flex;
-align-items: center;
-gap: 28px;
+    align-items: center;
+    gap: 28px;
 }
 
 .mapdescriptiontext{
@@ -222,9 +190,6 @@ gap: 28px;
 }
 
 /* infobox section */
-
-
-
 .infobox{
     display: flex;
     align-items: flex-start;
@@ -241,12 +206,7 @@ gap: 28px;
     flex: 1 0 0;
 }
 
-
-
-
-
 /* Responsiveness */
-
 @media (max-width: 768px) {
     .infocard-bold {
         font-size: 24px;
@@ -261,12 +221,9 @@ gap: 28px;
         gap: 40px;
     }
 
-    .otherinfo
-    {
+    .otherinfo {
         gap: 8px;
     }
-
-
 
     .map{
         min-width: 100%;
@@ -279,28 +236,22 @@ gap: 28px;
     .mapdescription{
         display: none;
     }
+
     .fixmain{
         padding-left: 40px;
         padding-right: 40px;
-        
-
     }
-
 
     .image-item img {
         width: 250px;
         height: 220px;
     }
+
     .scroll-container{
         padding-left: 30px;
         padding-right: 40px;
     }
-
 }
-
-
-
-
 
 @media (max-width: 480px) {
     .infocard-bold {
@@ -311,19 +262,17 @@ gap: 28px;
         gap: 12px;
     }
     
-    .otherinfo
-    {
+    .otherinfo {
         gap: 4px;
     }
+
     .fixmain{
         padding-left: 20px;
         padding-right: 40px;
-        
-
     }
+
     .scroll-container{
         padding-left: 10px;
         padding-right: 20px;
     }
-
 }

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
     --color-black: #000000;
     --color-light-black: #110F10;
@@ -13,13 +12,9 @@
     --font-style-header2: normal 600 48px/114% 'Montserrat', sans-serif; 
     --font-style-header3: normal 600 32px/114% 'Montserrat', sans-serif; 
     --font-style-body-text: normal 400 16px/120% 'Montserrat', sans-serif;
-    
 }
 
-
-
-
-/* layout */
+/* Layout */
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -41,9 +36,8 @@ body {
     height: 100%;
     background-color: var(--color-grey);
     margin: 0 auto;  
-    
-    
 }
+
 main {
     max-width: 1600px;
     padding-left: 80px;
@@ -62,22 +56,11 @@ main {
     margin: 0 auto;
 }
 
-
-
 /* Text */
-
-
-
 h1 { font: var(--font-style-header); color: var(--color-white); }
-
 h2 { font: var(--font-style-header2); color: var(--color-white); }
-
-h3 { font: var(--font-style-header3); color: var(--color-black);}
-
-p { font: var(--font-style-body-text); color: var(--color-white);}
-
-
-
+h3 { font: var(--font-style-header3); color: var(--color-black); }
+p { font: var(--font-style-body-text); color: var(--color-white); }
 
 .footerdescription { 
     color: #FFF;
@@ -88,18 +71,13 @@ p { font: var(--font-style-body-text); color: var(--color-white);}
     line-height: 120%; /* 28.8px */
 }
 
-
-
-
-
-
-
-/* bUTTONS */
+/* Buttons */
 button {
     all: unset;
     display: inline-block;
     cursor: pointer;
 }
+
 .button1 {
     display: flex;
     padding: 14px 35px;
@@ -142,8 +120,6 @@ button {
     color: #FFF;
 }
 
-
-
 .footer-button {
     display: flex;
     padding: 14px 35px;
@@ -152,7 +128,6 @@ button {
     gap: 14px;
     background: var(--color-orange);
     border-radius: 20px;
-
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
@@ -166,42 +141,30 @@ button {
     color: #000000;
 }
 
-.backbutton{
+.backbutton {
     display: flex;
     align-items: center;
     gap: 12px;
-
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
-
 }
 
-
-
-
-
-
-
-
-
-/* Cards*/
-
+/* Cards */
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Zajišťuje rovnoměrné rozložení obsahu s mezerami */
+    justify-content: space-between;
     align-items: flex-start;
     flex-grow: 1;
-    gap: 205px; /* Mezery mezi horní a dolní částí karty */
-    padding: 14px 19px;/* Maximální šířka karty */
-    height: auto; /* Výška se přizpůsobí obsahu */
+    gap: 205px;
+    padding: 14px 19px;
+    height: auto;
     border-radius: 12px;
-    flex-basis: calc(25% - 20px); /* Dynamická šířka karet s mezerami */
-
+    flex-basis: calc(25% - 20px);
 }
 
 .card:hover {
@@ -221,7 +184,7 @@ button {
     z-index: 1;
 }
 
-.card-container{
+.card-container {
     display: flex;
     align-items: center;
     align-content: center;
@@ -233,7 +196,7 @@ button {
 
 .topcard {
     display: flex;
-    width: 100%; /* Zajistí, že horní část karty využije celou šířku */
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
@@ -256,19 +219,16 @@ button {
     align-items: center;
     border-radius: 50%;
     border: 1px solid #FF5F00;
-
 }
+
 .difficulty p {
     color: #FFF;
-font-family: Montserrat;
-font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 200% */
-
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 200% */
 }
-
-
 
 .cardname {
     display: flex;
@@ -278,15 +238,16 @@ line-height: 20px; /* 200% */
     gap: 4px;
 }
 
-.start{
+.start {
     color: #FFF;
-font-family: Montserrat;
-font-size: 11px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 181.818% */
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 181.818% */
 }
-.end{
+
+.end {
     align-self: stretch;
     color: #FFF;
     font-family: Montserrat;
@@ -301,7 +262,7 @@ line-height: 20px; /* 181.818% */
     height: auto;
 }
 
-.difficulty{
+.difficulty {
     display: flex;
     width: 49px;
     height: 49px;
@@ -314,15 +275,14 @@ line-height: 20px; /* 181.818% */
     border: 1px solid #FF5F00;
 }
 
-.timeanddistance{
+.timeanddistance {
     display: flex;
     align-items: center;
     gap: 26px;
     flex-shrink: 0;
 }
 
-/* NAvbar */
-
+/* Navbar */
 nav {
     display: flex;
     padding: 40px 80px;
@@ -337,7 +297,7 @@ nav div {
     gap: 20px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: #FFF;
     font-family: Montserrat;
@@ -356,11 +316,7 @@ nav div {
     line-height: normal;
 }
 
-
-
 /* Footer */
-
-
 footer {
     display: flex;
     flex-direction: column;
@@ -418,36 +374,20 @@ footer {
     gap: 12px;
 }
 
-
-
-.footer-links-legal{
+.footer-links-legal {
     display: flex;
     align-items: flex-start;
     gap: 62px;
 }
 
-
-
-
-
-
-
 /* Tablet */
-
-
-
-
 @media (max-width: 768px) {
-    
     :root {
         --font-style-header: normal 600 60px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 36px/114% 'Montserrat', sans-serif; 
         --font-style-header3: normal 600 24px/114% 'Montserrat', sans-serif; 
         --font-style-body-text: normal 400 15px/120% 'Montserrat', sans-serif;
     }
-    
-    
-    
     
     nav {
         padding: 32px 40px;
@@ -461,11 +401,9 @@ footer {
 
     footer {
         padding: 60px 40px;
-
     }
 
-    #footer-main{
-        
+    #footer-main {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -477,8 +415,7 @@ footer {
         width: 100%;
     }
 
-
-    main{
+    main {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -487,47 +424,27 @@ footer {
         padding-right: 40px;
     }
 
-
-
-
     .cardcontainer {
-        display: grid; /* Přepínáme na grid layout */
-        grid-template-columns: repeat(2, 1fr); /* Dvě karty v jednom řádku */
-        gap: 20px; /* Zachovává mezery mezi kartami */
-        justify-content: center; /* Centrované rozložení gridu */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
     }
 
     .card {
-        flex-grow: 1; /* Zajišťuje, že karty nebudou růst mimo jejich obsah */
+        flex-grow: 1;
         min-width: 240px;
     }
-
-
 }
 
-
-    
-
-
-
 /* Mobile */
-
 @media (max-width: 480px) {
-    
-    
     :root {
         --font-style-header: normal 600 40px/114% 'Montserrat', sans-serif;
         --font-style-header2: normal 600 28px/114% 'Montserrat', sans-serif; 
         --font-style-header3: normal 600 20px/114% 'Montserrat', sans-serif; 
         --font-style-body-text: normal 400 14px/120% 'Montserrat', sans-serif;
-        
     }
-    
-    
-    
-    
-    
-    
     
     nav {
         padding: 24px 16px;
@@ -539,7 +456,6 @@ footer {
         font-size: 20px;
     }
 
-
     footer {
         padding: 40px 20px;
     }
@@ -548,11 +464,8 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
     }
-    main{
+    main {
         padding-left: 20px;
         padding-right: 20px;
     }
-
-
-
 }
